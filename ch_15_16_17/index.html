@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Ch_15_16_17
+        </title>
+    </head>
+    <body>
+        <script>
+            var courses=[]
+            var name
+            for(var i=0;i<5;i++){
+                name=prompt((i+1) + " course name:"," ")
+                courses.push(name)
+            }
+            alert(courses)
+            for(var j=0;j<5;j++)
+            {
+                courses[j]=prompt(courses[j],courses[j])
+            }
+
+            alert(courses)
+
+        </script>
+    </body>
+</html>

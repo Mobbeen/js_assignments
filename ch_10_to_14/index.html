@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        <script>
+            var num1= prompt("Enter First number = ", " 0")
+            var num2= prompt("Enter second number = ","0")
+            num1=parseInt(num1)
+            num2=parseInt(num2)
+            var sign=prompt("Enter a operation = ","+")
+
+            var ans= 0;
+
+            if(sign== "+"){
+
+                ans=num1 + num2;
+            }
+            if(sign== "-"){
+
+                ans=num1 - num2;
+            }
+            if(sign== "*" || sign=="x"){
+
+                ans=num1 * num2;
+            }
+            if(sign== "/"){
+
+                ans=num1 / num2;
+            }          
+            alert(ans)
+        </script>
+
+    </body>
+</html>

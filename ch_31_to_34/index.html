@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+        <script>
+            var date=new Date();
+            alert(date)
+
+            var name=prompt("Enter your name")
+            var dobDay=prompt("Enter your Date of birth (Day)")
+            var dobMonth=prompt("Enter your DOB month")
+            var dobYear=prompt("Enter your DOB year")
+          
+            console.log("Hello "+ name+", Good Morning")
+
+            var myDob= new Date()
+            myDob.setFullYear(dobYear)
+            myDob.setMonth(dobMonth-1)
+            myDob.setDate(dobDay)
+            
+            console.log("Your DOB is "+myDob)
+            var age=Math.abs(date.getUTCFullYear() - dobYear)
+            
+            if ((date.getMonth()+1) >= dobMonth){  
+            
+            age--;
+            var month = (date.getMonth()+1) - dobMonth;
+            }  
+            else {  
+                age--;  
+                var month = 12 + (date.getMonth()+1) - dobMonth;  
+            }  
+
+            if (date.getDay() >= dobDay)  
+            {
+              var dateAge = date.getDay() - dobDay;
+            }  
+            else {  
+            month--;  
+             var dateAge = dobDay - date.getDay();  
+  
+             if (month < 0) {  
+                  month = 11;  
+                    
+              }  
+             }
+            console.log(age ,month,dateAge)
+            
+           
+
+        </script>
+    </body>
+</html>

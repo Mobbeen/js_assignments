@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>courses</title>
+    </head>
+    <body>
+        <script>
+
+            var num1= prompt("Enter First Course number = ", " 0")
+            var num2= prompt("Enter second Course number = ", " 0")
+            var num3= prompt("Enter third Course number = ", " 0")
+            var num4= prompt("Enter Fourth Course number = ", " 0")
+            var num5= prompt("Enter Fifth Course number = ", " 0")
+            num1=parseInt(num1)
+            num2=parseInt(num2)
+            num3=parseInt(num3)
+            num4=parseInt(num4)
+            num5=parseInt(num5)
+            var totalmarks=500
+            var obtaind=num1+num2+num3+num4+num5
+
+            var percentage= obtaind * 100 / totalmarks
+
+            alert(percentage+"%")
+
+            var grade=0;
+            if (percentage >= 90 && percentage<= 100 ) {
+                grade=1;
+            }           
+            if (percentage >= 75 && percentage<= 89 ) {
+                grade=2;
+            }    
+            if (percentage >= 60 && percentage<= 74 ) {
+                grade=3;
+            }    
+            if (percentage >= 45 && percentage<= 59 ) {
+                grade=4;
+            }    
+            if (percentage >= 30 && percentage<= 44 ) {
+                grade=5;
+            }  
+            if (percentage >= 0 && percentage<= 29 ) {
+                grade=6;
+            }      
+
+
+            switch (grade) {
+                
+                    case 1:
+                       alert("Your Grade is A+")
+                    break;
+                    case 2:
+                        alert("Your Grade is A")
+                    break;
+                    case 3:
+                        alert("Your Grade is B")
+                    
+                    break;
+                    case 4:
+                         alert("Your Grade is C")
+                    break;
+                    case 5:
+                         alert("Your Grade is D")
+                    break;
+                    case 6:
+                         alert("Your Grade is F")
+                    break;
+                   
+                default:
+                    alert("Error")
+                    break;
+            }
+
+
+        </script>
+    </body>
+</html>
